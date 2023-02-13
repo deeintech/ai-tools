@@ -10,8 +10,7 @@ export type TagType =
   | 'audio'
   | 'marketing'
   | 'crypto'
-  | 'others'
-  | 'courses';
+  | 'others';
 
 const Tools: Tool[] = [
   {
@@ -126,7 +125,7 @@ export const Tags: {[type in TagType]: Tag} = {
   chatbots: {
     label: translate({message: 'AI Chatbots'}),
     description: translate({
-      message: 'Docusaurus sites of Meta (formerly Facebook) projects',
+      message: 'chatbots powered by ai',
       id: 'showcase.tag.chatbots.description',
     }),
     color: '#4267b2',
@@ -135,7 +134,7 @@ export const Tags: {[type in TagType]: Tag} = {
   marketing: {
     label: translate({message: 'AI Marketing'}),
     description: translate({
-      message: 'Docusaurus sites of Meta (formerly Facebook) projects',
+      message: 'marketing tools powered by ai',
       id: 'showcase.tag.marketing.description',
     }),
     color: '#4267b2',
@@ -144,7 +143,7 @@ export const Tags: {[type in TagType]: Tag} = {
   art: {
     label: translate({message: 'AI Art'}),
     description: translate({
-      message: 'Open-Source Docusaurus sites can be useful for inspiration!',
+      message: 'art tools powered by ai',
       id: 'showcase.tag.art.description',
     }),
     color: '#39ca30',
@@ -153,7 +152,7 @@ export const Tags: {[type in TagType]: Tag} = {
   text: {
     label: translate({message: 'AI Text'}),
     description: translate({
-      message: 'Docusaurus sites associated to a commercial text!',
+      message: 'text tools powered by ai',
       id: 'showcase.tag.text.description',
     }),
     color: '#dfd545',
@@ -163,7 +162,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'Video'}),
     description: translate({
       message:
-        'Beautiful Docusaurus sites, polished and standing out from the initial template!',
+        'video tools powered by ai',
       id: 'showcase.tag.video.description',
     }),
     color: '#a44fb7',
@@ -173,7 +172,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Audio'}),
     description: translate({
       message:
-        'Very large Docusaurus sites, including many more pages than the average!',
+        'audio tools powered by ai',
       id: 'showcase.tag.audio.description',
     }),
     color: '#8c2f00',
@@ -182,26 +181,16 @@ export const Tags: {[type in TagType]: Tag} = {
   crypto: {
     label: translate({message: 'AI Crypto'}),
     description: translate({
-      message: 'Docusaurus sites of Meta (formerly Facebook) projects',
+      message: 'crypto tools powered by ai',
       id: 'showcase.tag.crypto.description',
     }),
     color: '#4267b2',
   },
 
-  courses: {
-    label: translate({message: 'AI Courses'}),
-    description: translate({
-      message:
-        'Personal websites, blogs and digital gardens built with Docusaurus',
-      id: 'showcase.tag.courses.description',
-    }),
-    color: '#14cfc3',
-  },
-
   others: {
     label: translate({message: 'Others'}),
     description: translate({
-      message: 'Docusaurus sites of Meta (formerly Facebook) projects',
+      message: 'other tools powered by ai',
       id: 'showcase.tag.others.description',
     }),
     color: '#4267b2',

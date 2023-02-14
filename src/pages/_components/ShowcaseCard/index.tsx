@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Image from '@theme/IdealImage';
 import Heading from '@theme/Heading';
-import Translate from '@docusaurus/Translate';
 import FavoriteIcon from '../../../components/svgIcons/FavoriteIcon';
 import {
     Tags,
@@ -13,7 +12,6 @@ import {
     type Tag,
 } from '../../../data/tools';
 import {sortBy} from '../../../utils/jsUtils';
-import Tooltip from '../ShowcaseTooltip';
 import styles from './styles.module.css';
 
 const TagComp = React.forwardRef<HTMLLIElement, Tag>(
@@ -39,34 +37,18 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
           const id = `showcase_card_tag_${tagObject.tag}`;
   
           return (
-            <Tooltip
-              key={index}
-              text={tagObject.description}
-              anchorEl="#__docusaurus"
-              id={id}>
               <TagComp key={index} {...tagObject} />
-            </Tooltip>
           );
         })}
       </>
     );
   }
   
-  function getCardImage(tool: Tool): string {
-    return (
-      tool.image ??
-      `https://slorber-api-screenshot.netlify.app/${encodeURIComponent(
-        tool.website,
-      )}/showcase`
-    );
-  }
-  
   function ShowcaseCard({tool}: {tool: Tool}) {
-    const image = getCardImage(tool);
     return (
       <li key={tool.title} className="card shadow--md">
         <div className={clsx('card__image', styles.showcaseCardImage)}>
-          <Image img={image} alt={tool.title} />
+          <Image img={tool.image} alt={tool.title} />
         </div>
         <div className="card__body">
           <div className={clsx(styles.showcaseCardHeader)}>

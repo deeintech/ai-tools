@@ -63,12 +63,12 @@ const Tools: Tool[] = [
     tags: ['marketing'],
   },
   {
-  title: "Screaming Frog",
-  description: 'Website crawler that helps you improve onsite SEO by auditing for common SEO issues',
-  image: require('./images/marketing/screaming-frog.png'),
-  website: 'https://www.screamingfrog.co.uk',
-  price: 199,
-  tags: ['marketing'],
+    title: "Screaming Frog",
+    description: 'Website crawler that helps you improve onsite SEO by auditing for common SEO issues',
+    image: require('./images/marketing/screaming-frog.png'),
+    website: 'https://www.screamingfrog.co.uk',
+    price: 199,
+    tags: ['marketing'],
   },
   {
     title: 'Shine Ranker',
@@ -131,15 +131,6 @@ export const Tags: {[type in TagType]: Tag} = {
     color: '#4267b2',
   },
 
-  marketing: {
-    label: translate({message: 'AI Marketing'}),
-    description: translate({
-      message: 'marketing tools powered by ai',
-      id: 'showcase.tag.marketing.description',
-    }),
-    color: '#4267b2',
-  },
-
   art: {
     label: translate({message: 'AI Art'}),
     description: translate({
@@ -176,6 +167,15 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'showcase.tag.audio.description',
     }),
     color: '#8c2f00',
+  },
+
+  marketing: {
+    label: translate({message: 'AI Marketing'}),
+    description: translate({
+      message: 'marketing tools powered by ai',
+      id: 'showcase.tag.marketing.description',
+    }),
+    color: '#4267b2',
   },
 
   crypto: {

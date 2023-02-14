@@ -117,7 +117,7 @@ export const Tags: {[type in TagType]: Tag} = {
     description: translate({
       message:
         'Our favorite Docusaurus sites that you must absolutely check out!',
-      id: 'showcase.tag.featured.description',
+      id: 'item.tag.featured.description',
     }),
     color: '#e9669e',
   },
@@ -126,7 +126,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Chatbots'}),
     description: translate({
       message: 'chatbots powered by ai',
-      id: 'showcase.tag.chatbots.description',
+      id: 'item.tag.chatbots.description',
     }),
     color: '#4267b2',
   },
@@ -135,7 +135,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Art'}),
     description: translate({
       message: 'art tools powered by ai',
-      id: 'showcase.tag.art.description',
+      id: 'item.tag.art.description',
     }),
     color: '#39ca30',
   },
@@ -144,7 +144,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Text'}),
     description: translate({
       message: 'text tools powered by ai',
-      id: 'showcase.tag.text.description',
+      id: 'item.tag.text.description',
     }),
     color: '#dfd545',
   },
@@ -154,7 +154,7 @@ export const Tags: {[type in TagType]: Tag} = {
     description: translate({
       message:
         'video tools powered by ai',
-      id: 'showcase.tag.video.description',
+      id: 'item.tag.video.description',
     }),
     color: '#a44fb7',
   },
@@ -164,7 +164,7 @@ export const Tags: {[type in TagType]: Tag} = {
     description: translate({
       message:
         'audio tools powered by ai',
-      id: 'showcase.tag.audio.description',
+      id: 'item.tag.audio.description',
     }),
     color: '#8c2f00',
   },
@@ -173,7 +173,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Marketing'}),
     description: translate({
       message: 'marketing tools powered by ai',
-      id: 'showcase.tag.marketing.description',
+      id: 'item.tag.marketing.description',
     }),
     color: '#4267b2',
   },
@@ -182,7 +182,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Crypto'}),
     description: translate({
       message: 'crypto tools powered by ai',
-      id: 'showcase.tag.crypto.description',
+      id: 'item.tag.crypto.description',
     }),
     color: '#4267b2',
   },
@@ -191,7 +191,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'Others'}),
     description: translate({
       message: 'other tools powered by ai',
-      id: 'showcase.tag.others.description',
+      id: 'item.tag.others.description',
     }),
     color: '#4267b2',
   },

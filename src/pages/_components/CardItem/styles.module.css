@@ -1,21 +1,21 @@
-.showcaseCardImage {
+.cardItemImage {
   overflow: hidden;
   height: 150px;
   border-bottom: 2px solid var(--ifm-color-emphasis-200);
 }
 
-.showcaseCardHeader {
+.cardItemHeader {
   display: flex;
   align-items: center;
   margin-bottom: 12px;
 }
 
-.showcaseCardTitle {
+.cardItemTitle {
   margin-bottom: 0;
   flex: 1 1 auto;
 }
 
-.showcaseCardTitle a {
+.cardItemTitle a {
   text-decoration: none;
   background: linear-gradient(
           var(--ifm-color-primary),
@@ -25,40 +25,40 @@
   transition: background-size ease-out 200ms;
 }
 
-.showcaseCardTitle a:not(:focus):hover {
+.cardItemTitle a:not(:focus):hover {
   background-size: 100% 1px;
 }
 
-.showcaseCardTitle,
-.showcaseCardHeader .svgIconFavorite {
+.cardItemTitle,
+.cardItemHeader .svgIconFavorite {
   margin-right: 0.25rem;
 }
 
-.showcaseCardHeader .svgIconFavorite {
+.cardItemHeader .svgIconFavorite {
   color: var(--site-color-svg-icon-favorite);
 }
 
-.showcaseCardSrcBtn {
+.cardItemSrcBtn {
   margin-left: 6px;
   padding-left: 12px;
   padding-right: 12px;
   border: none;
 }
 
-.showcaseCardSrcBtn:focus-visible {
+.cardItemSrcBtn:focus-visible {
   background-color: var(--ifm-color-secondary-dark);
 }
 
-[data-theme='dark'] .showcaseCardSrcBtn {
+[data-theme='dark'] .cardItemSrcBtn {
   background-color: var(--ifm-color-emphasis-200) !important;
   color: inherit;
 }
 
-[data-theme='dark'] .showcaseCardSrcBtn:hover {
+[data-theme='dark'] .cardItemSrcBtn:hover {
   background-color: var(--ifm-color-emphasis-300) !important;
 }
 
-.showcaseCardBody {
+.cardItemBody {
   font-size: smaller;
   line-height: 1.66;
   overflow: hidden;

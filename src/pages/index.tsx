@@ -3,7 +3,6 @@ import clsx from 'clsx';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import Translate, {translate} from '@docusaurus/Translate';
 import {useHistory, useLocation} from '@docusaurus/router';
-import {usePluralForm} from '@docusaurus/theme-common';
 import Layout from '@theme/Layout';
 import FavoriteIcon from '@site/src/components/svgIcons/FavoriteIcon';
 import {
@@ -15,8 +14,8 @@ import {
 } from '@site/src/data/tools';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import ShowcaseCard from './_components/ShowcaseCard';
-import ShowcaseTagSelect, { readSearchTags } from './_components/ShowcaseTagSelect';
+import CardItem from './_components/CardItem';
+import CardItemTagSelect, { readSearchTags } from './_components/CardItemTagSelect';
 
 const TITLE = translate({message: 'AI Tools'});
 const DESCRIPTION = translate({
@@ -105,42 +104,17 @@ function ShowcaseHeader() {
   );
 }
 
-function useSiteCountPlural() {
-  const {selectMessage} = usePluralForm();
-  return (toolsCount: number) =>
-    selectMessage(
-      toolsCount,
-      translate(
-        {
-          id: 'showcase.filters.resultCount',
-          description:
-            'Pluralized label for the number of tools found on the showcase',
-          message: '1 tool|{toolsCount} tools',
-        },
-        {toolsCount},
-      ),
-    );
-}
-
 function ShowcaseFilters() {
-  const filteredTools = useFilteredTools();
-  const toolCountPlural = useSiteCountPlural();
   return (
     <section className="container margin-top--l margin-bottom--lg">
-      {/* <div className={clsx('margin-bottom--sm', styles.filterCheckbox)}>
-        <SearchBar />
-        <div>
-          <span>{toolCountPlural(filteredTools.length)}</span>
-        </div>
-      </div> */}
       <ul className={clsx('clean-list', styles.checkboxList)}>
         {TagList.map((tag, i) => {
           const {label, description, color} = Tags[tag];
-          const id = `showcase_checkbox_id_${tag}`;
+          const id = `tool_checkbox_id_${tag}`;
 
           return (
             <li key={i} className={styles.checkboxListItem}>
-                <ShowcaseTagSelect
+                <CardItemTagSelect
                   tag={tag}
                   id={id}
                   label={label}
@@ -181,7 +155,7 @@ function SearchBar() {
         id="searchbar"
         placeholder={translate({
           message: 'go',
-          id: 'showcase.searchBar.placeholder',
+          id: 'item.searchBar.placeholder',
         })}
         value={value ?? undefined}
         onInput={(e) => {
@@ -205,7 +179,7 @@ function SearchBar() {
   );
 }
 
-function ShowcaseCards() {
+function CardItems() {
   const filteredTools = useFilteredTools();
 
   if (filteredTools.length === 0) {
@@ -213,7 +187,7 @@ function ShowcaseCards() {
       <section className="margin-top--lg margin-bottom--xl">
         <div className="container padding-vert--md text--center">
           <Heading as="h2">
-            <Translate id="showcase.toolsList.noResult">No result</Translate>
+            <Translate id="item.toolsList.noResult">No result</Translate>
           </Heading>
         </div>
       </section>
@@ -225,9 +199,9 @@ function ShowcaseCards() {
       {filteredTools.length === sortedTools.length ? (
         <>
           <div className="container margin-top--lg">
-            <ul className={clsx('clean-list', styles.showcaseList)}>
+            <ul className={clsx('clean-list', styles.cardItemList)}>
               {sortedTools.map((tool) => (
-                <ShowcaseCard key={tool.title} tool={tool} />
+                <CardItem key={tool.title} tool={tool} />
               ))}
             </ul>
           </div>
@@ -236,12 +210,12 @@ function ShowcaseCards() {
         <div className="container">
           <div
             className={clsx(
-              styles.showcaseFavoriteHeader,
+              styles.cardItemFavoriteHeader,
             )}>
           </div>
-          <ul className={clsx('clean-list', styles.showcaseList)}>
+          <ul className={clsx('clean-list', styles.cardItemList)}>
             {filteredTools.map((tool) => (
-              <ShowcaseCard key={tool.title} tool={tool} />
+              <CardItem key={tool.title} tool={tool} />
             ))}
           </ul>
         </div>
@@ -256,7 +230,7 @@ export default function Home(): JSX.Element {
       <main className="margin-vert--lg">
         <ShowcaseHeader />
         <ShowcaseFilters />
-        <ShowcaseCards />
+        <CardItems />
       </main>
     </Layout>
   );

@@ -23,7 +23,7 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
     ),
   );
   
-  function ShowcaseCardTag({tags}: {tags: TagType[]}) {
+  function CardItemTag({tags}: {tags: TagType[]}) {
     const tagObjects = tags.map((tag) => ({tag, ...Tags[tag]}));
   
     // Keep same order for all tags
@@ -34,7 +34,7 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
     return (
       <>
         {tagObjectsSorted.map((tagObject, index) => {
-          const id = `showcase_card_tag_${tagObject.tag}`;
+          const id = `card_tag_${tagObject.tag}`;
   
           return (
               <TagComp key={index} {...tagObject} />
@@ -44,16 +44,16 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
     );
   }
   
-  function ShowcaseCard({tool}: {tool: Tool}) {
+  function CardItem({tool}: {tool: Tool}) {
     return (
       <li key={tool.title} className="card shadow--md">
-        <div className={clsx('card__image', styles.showcaseCardImage)}>
+        <div className={clsx('card__image', styles.cardItemImage)}>
           <Image img={tool.image} alt={tool.title} />
         </div>
         <div className="card__body">
-          <div className={clsx(styles.showcaseCardHeader)}>
-            <Heading as="h4" className={styles.showcaseCardTitle}>
-              <Link href={tool.website} className={styles.showcaseCardLink}>
+          <div className={clsx(styles.cardItemHeader)}>
+            <Heading as="h4" className={styles.cardItemTitle}>
+              <Link href={tool.website} className={styles.cardItemLink}>
                 {tool.title}
               </Link>
             </Heading>
@@ -62,14 +62,14 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
             )}
             {(tool.price !== 0) ? `$${tool.price}+` : 'free'}
           </div>
-          <p className={styles.showcaseCardBody}>{tool.description}</p>
+          <p className={styles.cardItemBody}>{tool.description}</p>
         </div>
         <ul className={clsx('card__footer', styles.cardFooter)}>
-          <ShowcaseCardTag tags={tool.tags} />
+          <CardItemTag tags={tool.tags} />
         </ul>
       </li>
     );
   }
   
-  export default React.memo(ShowcaseCard);
+  export default React.memo(CardItem);
   

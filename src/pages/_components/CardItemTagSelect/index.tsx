@@ -32,7 +32,7 @@ function replaceSearchTags(search: string, newTags: TagType[]) {
   return searchParams.toString();
 }
 
-function ShowcaseTagSelect(
+function CardItemTagSelect(
     {id, icon, label, tag, ...rest}: Props,
     ref: React.ForwardedRef<HTMLLabelElement>,
 ) {
@@ -86,4 +86,4 @@ function ShowcaseTagSelect(
   );
 }
 
-export default React.forwardRef(ShowcaseTagSelect);
+export default React.forwardRef(CardItemTagSelect);

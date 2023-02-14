@@ -6,7 +6,7 @@ const config = {
   title: 'AI Tools',
   tagline: 'A list of AI tools',
   favicon: 'img/favicon.ico',
-  url: 'https://ai-tools.gg',
+  url: 'https://ai-tools-pro.netlify.app',
   baseUrl: '/',
   organizationName: 'deeintech',
   projectName: 'ai-tools',

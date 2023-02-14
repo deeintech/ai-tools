@@ -59,6 +59,9 @@ const config = {
         //   },
         // ],
       },
+      colorMode: {
+        defaultMode: 'dark',
+      },
       footer: {
         style: 'dark',
         copyright: `© ${new Date().getFullYear()} Dee in Tech`,

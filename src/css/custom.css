@@ -10,7 +10,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
@@ -20,11 +19,17 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-background-color: #1b1b1d;
+  --imf-color-gray-dark: rgba(31, 31, 33, 0.5);
+  --imf-color-gray-darker: rgb(48, 49, 59);
+  --imf-color-gray-lighter: rgb(63, 64, 77);
+  --imf-color-white: #fff;
+  --imf-color-black: rgba(0, 0, 0, 0.1);
+  background-color: var(--imf-color-gray-darker);
 }
+
 [data-theme='dark']
-.navbar {
-  background-color: var(--ifm-background-color);
+.navbar, .footer {
+  background-color: var(--imf-color-gray-darker);
 }
 
 .navbar {
@@ -32,11 +37,24 @@
 }
 
 #searchbar {
-  border-radius: 8px;
-  padding: 20px;
+  padding: 23px;
   width: 40%;
+  height: 24px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+[data-theme='dark']
+#searchbar {
+  border: 1px solid var(--imf-color-gray-dark);
+  box-shadow: 0 0 transparent,0 0 transparent,0 0 8px var(--imf-color-black);
+  background-color: var(--imf-color-gray-lighter);
 }
 
 .card {
-  border-radius: 8px;
+  border-radius: 0 12px;
+}
+
+:focus-visible {
+  outline: none;
 }

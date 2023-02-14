@@ -94,7 +94,7 @@ function useFilteredTools() {
   );
 }
 
-function ShowcaseHeader() {
+function CardHeader() {
   return (
     <section className="margin-bottom--lg text--center">
       <Heading as="h1">{TITLE}</Heading>
@@ -104,7 +104,7 @@ function ShowcaseHeader() {
   );
 }
 
-function ShowcaseFilters() {
+function CardFilters() {
   return (
     <section className="container margin-top--l margin-bottom--lg">
       <ul className={clsx('clean-list', styles.checkboxList)}>
@@ -228,8 +228,8 @@ export default function Home(): JSX.Element {
   return (
     <Layout title={TITLE} description={DESCRIPTION}>
       <main className="margin-vert--lg">
-        <ShowcaseHeader />
-        <ShowcaseFilters />
+        <CardHeader />
+        <CardFilters />
         <CardItems />
       </main>
     </Layout>

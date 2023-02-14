@@ -546,7 +546,7 @@ export const Tags: {[type in TagType]: Tag} = {
         'our favorite AI tools that you must absolutely check out!',
       id: 'item.tag.featured.description',
     }),
-    color: '#e9669e',
+    color: '#E52800',
   },
 
   chatbot: {
@@ -555,7 +555,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'chatbots powered by ai',
       id: 'item.tag.chatbot.description',
     }),
-    color: '#4267b2',
+    color: '#1163C0',
   },
 
   search: {
@@ -564,7 +564,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'search tools powered by ai',
       id: 'item.tag.search.description',
     }),
-    color: '#4267b2',
+    color: '#7EA4B0',
   },
 
   art: {
@@ -573,7 +573,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'art tools powered by ai',
       id: 'item.tag.art.description',
     }),
-    color: '#39ca30',
+    color: '#EAB51B',
   },
 
   writing: {
@@ -582,7 +582,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'writing tools powered by ai',
       id: 'item.tag.text.description',
     }),
-    color: '#dfd545',
+    color: '#505984',
   },
 
   video: {
@@ -592,7 +592,7 @@ export const Tags: {[type in TagType]: Tag} = {
         'video tools powered by ai',
       id: 'item.tag.video.description',
     }),
-    color: '#a44fb7',
+    color: '#29C7DD',
   },
 
   voice: {
@@ -602,7 +602,7 @@ export const Tags: {[type in TagType]: Tag} = {
         'audio tools powered by ai',
       id: 'item.tag.voice.description',
     }),
-    color: '#8c2f00',
+    color: '#9B6F9B',
   },
 
   marketing: {
@@ -611,7 +611,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'marketing tools powered by ai',
       id: 'item.tag.marketing.description',
     }),
-    color: '#4267b2',
+    color: '#93756C',
   },
   gaming: {
     label: translate({message: 'AI Gaming'}),
@@ -619,7 +619,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'gaming tools powered by ai',
       id: 'item.tag.gaming.description',
     }),
-    color: '#4267b2',
+    color: '#CD8ACA',
   },
 
   crypto: {
@@ -628,7 +628,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'crypto tools powered by ai',
       id: 'item.tag.crypto.description',
     }),
-    color: '#4267b2',
+    color: '#81D536',
   },
 
   others: {
@@ -637,7 +637,7 @@ export const Tags: {[type in TagType]: Tag} = {
       message: 'other tools powered by ai',
       id: 'item.tag.others.description',
     }),
-    color: '#4267b2',
+    color: '#CDD9D4',
   },
 };
 

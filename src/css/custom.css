@@ -6,24 +6,25 @@
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
+  --imf-color-white: rgb(255, 255, 255);
+  --imf-color-black: rgba(0, 0, 0, 0.1);
+  --ifm-global-shadow-md: 0 5px 10px rgba(0, 0, 0, 0.2);
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #3eb172;
+  --ifm-color-primary-dark: #318e5b;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #28784c;
+  --ifm-color-primary-light: #39a66a;
+  --ifm-color-primary-lighter: #3bac6e;
+  --ifm-color-primary-lightest: #44c77f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --imf-color-gray-dark: rgba(31, 31, 33, 0.5);
   --imf-color-gray-darker: rgb(48, 49, 59);
   --imf-color-gray-lighter: rgb(63, 64, 77);
-  --imf-color-white: #fff;
-  --imf-color-black: rgba(0, 0, 0, 0.1);
   background-color: var(--imf-color-gray-darker);
 }
 
@@ -41,20 +42,27 @@
   width: 40%;
   height: 24px;
   border-radius: 5px;
+  border: 1px solid var(--imf-color-black);
+  box-shadow: 0 0 transparent,0 0 transparent,0 0 6px var(--imf-color-black);
   font-size: 18px;
 }
 
 [data-theme='dark']
 #searchbar {
-  border: 1px solid var(--imf-color-gray-dark);
-  box-shadow: 0 0 transparent,0 0 transparent,0 0 8px var(--imf-color-black);
   background-color: var(--imf-color-gray-lighter);
 }
 
 .card {
   border-radius: 0 12px;
+  background-color: var(--imf-color-gray-lighter);
 }
 
 :focus-visible {
   outline: none;
+}
+
+@media screen and (max-width: 970px) {
+  #searchbar {
+    width: 92%;
+  }
 }

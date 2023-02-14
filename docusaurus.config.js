@@ -3,8 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AI Tools',
-  tagline: 'A list of AI tools',
+  title: 'The ultimate list of AI tools',
   favicon: 'img/favicon.ico',
   url: 'https://ai-tools-pro.netlify.app',
   baseUrl: '/',
@@ -46,23 +45,23 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/logo/png',
+      // image: 'img/logo/png',
       navbar: {
-        logo: {
-          alt: 'Logo',
-          src: 'img/logo.png',
-        },
-        items: [
-          {
-            href: '/',
-            label: 'Submit your tool',
-            position: 'right',
-          },
-        ],
+        // logo: {
+        //   alt: 'Logo',
+        //   src: 'img/logo.png',
+        // },
+        // items: [
+        //   {
+        //     href: '/',
+        //     label: 'Submit your tool',
+        //     position: 'right',
+        //   },
+        // ],
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()}`,
+        copyright: `© ${new Date().getFullYear()} Dee in Tech`,
       },
       prism: {
         theme: lightCodeTheme,

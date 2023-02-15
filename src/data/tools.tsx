@@ -919,7 +919,7 @@ const Tools: Tool[] = [
   {
     id: 99,
     title: "Headlime",
-    description: 'AI tools that generates marketing copy for you',
+    description: 'AI tool that generates marketing copy for you',
     image: './images/writing/headlime.png',
     website: 'https://headlime.com/',
     price: 59,

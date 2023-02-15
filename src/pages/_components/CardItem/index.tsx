@@ -1,7 +1,6 @@
 import React from 'react';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import Image from '@theme/IdealImage';
 import Heading from '@theme/Heading';
 import FavoriteIcon from '../../../components/svgIcons/FavoriteIcon';
 import {
@@ -48,7 +47,7 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
     return (
       <li key={tool.title} className="card shadow--md">
         <div className={clsx('card__image', styles.cardItemImage)}>
-          <Image img={tool.image} alt={tool.title} />
+          <img src={tool.image} alt={tool.title} />
         </div>
         <div className="card__body">
           <div className={clsx(styles.cardItemHeader)}>

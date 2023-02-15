@@ -3,7 +3,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'The ultimate list of AI tools',
+  title: 'The ultimate list of best AI tools',
   favicon: 'img/favicon.ico',
   url: 'https://ai-tools-pro.netlify.app',
   baseUrl: '/',
@@ -35,8 +35,8 @@ const config = {
       '@docusaurus/plugin-ideal-image',
       {
         quality: 70,
-        max: 1030, // max resized image's size.
-        min: 640, // min resized image's size. if original is lower, use that size.
+        max: 460, // max resized image's size.
+        min: 280, // min resized image's size. if original is lower, use that size.
         steps: 2, // the max number of images generated between min and max (inclusive)
         disableInDev: false,
       },
@@ -64,7 +64,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `© ${new Date().getFullYear()} Dee in Tech`,
+        copyright: `© ${new Date().getFullYear()} @deeintech`,
       },
       prism: {
         theme: lightCodeTheme,

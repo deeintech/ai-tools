@@ -3,7 +3,7 @@ import {sortBy} from '@site/src/utils/jsUtils';
 
 export type TagType =
   | 'featured'
-  | 'chatbot'
+  | 'assistant'
   | 'art'
   | 'writing'
   | 'video'
@@ -119,28 +119,28 @@ const Tools: Tool[] = [
     id: 12,
     title: "Chat GPT",
     description: 'AI chatbot built by OpenAI that interacts in a conversational way',
-    image: require('./images/chatbots/chat-gpt.png'),
+    image: require('./images/assistant/chat-gpt.png'),
     website: 'https://chat.openai.com/chat/',
     price: 0,
-    tags: ['chatbot', 'writing', 'featured'],
+    tags: ['assistant', 'writing', 'featured'],
   },
   {
     id: 13,
     title: "ChatSonic",
     description: 'Conversational AI chatbot that addresses the limitations of ChatGPT',
-    image: require('./images/chatbots/chatsonic.png'),
+    image: require('./images/assistant/chatsonic.png'),
     website: 'https://writesonic.com/chat',
     price: 0,
-    tags: ['chatbot', 'writing', 'art'],
+    tags: ['assistant', 'writing', 'art'],
   },
   {
     id: 14,
     title: "Personal",
     description: 'Built-in Personal AI messaging for an everlasting connection with the people and ideas in your world',
-    image: require('./images/chatbots/personal.png'),
+    image: require('./images/assistant/personal.png'),
     website: 'https://www.personal.ai/',
     price: 40,
-    tags: ['chatbot'],
+    tags: ['assistant'],
   },
   {
     id: 15,
@@ -155,10 +155,10 @@ const Tools: Tool[] = [
     id: 16,
     title: "You",
     description: 'AI search engine',
-    image: require('./images/chatbots/you.png'),
+    image: require('./images/assistant/you.png'),
     website: 'https://you.com/',
     price: 0,
-    tags: ['chatbot', 'search', 'writing'],
+    tags: ['assistant', 'search', 'writing'],
   },
   {
     id: 17,
@@ -266,7 +266,7 @@ const Tools: Tool[] = [
     image: require('./images/video/pictory.png'),
     website: 'https://pictory.ai/',
     price: 19,
-    tags: ['video', 'marketing', 'featured'],
+    tags: ['video', 'marketing'],
   },
   {
     id: 30,
@@ -320,7 +320,7 @@ const Tools: Tool[] = [
     image: require('./images/video/fliki.png'),
     website: 'https://fliki.ai/',
     price: 0,
-    tags: ['video', 'featured'],
+    tags: ['video'],
   },
   {
     id: 36,
@@ -365,7 +365,7 @@ const Tools: Tool[] = [
     image: require('./images/video/d-id.png'),
     website: 'https://www.d-id.com/',
     price: 6,
-    tags: ['video', 'featured'],
+    tags: ['video'],
   },
   {
     id: 41,
@@ -446,7 +446,7 @@ const Tools: Tool[] = [
     image: require('./images/video/descript.png'),
     website: 'https://www.descript.com/',
     price: 0,
-    tags: ['video', 'featured'],
+    tags: ['video'],
   },
   {
     id: 50,
@@ -520,6 +520,69 @@ const Tools: Tool[] = [
     price: 0,
     tags: ['voice'],
   },
+  {
+    id: 56,
+    title: "Notion AI",
+    description: 'AI assitant powered by Notion for generation of any type of content faster',
+    image: require('./images/writing/notion-ai.png'),
+    website: 'https://www.notion.so/product/ai',
+    price: 0,
+    tags: ['writing'],
+  },
+  {
+    id: 57,
+    title: "ACT-1",
+    description: 'AI assitant built by Adept that executes high-level user requests automatically',
+    image: require('./images/assistant/act-1.png'),
+    website: 'https://www.adept.ai/act',
+    price: 0,
+    tags: ['assistant'],
+  },
+  {
+    id: 58,
+    title: "Grammarly",
+    description: 'AI-powered writing assistant for composing bold, clear, mistake-free writing',
+    image: require('./images/writing/grammarly.png'),
+    website: 'https://www.grammarly.com/',
+    price: 0,
+    tags: ['writing'],
+  },
+  {
+    id: 59,
+    title: "Supermeme",
+    description: 'AI-powered tool that turns text into original memes in 110+ languages',
+    image: require('./images/art/supermeme.png'),
+    website: 'https://www.supermeme.ai/',
+    price: 10,
+    tags: ['art'],
+  },
+  {
+    id: 60,
+    title: "Replika",
+    description: 'An AI companion who cares and is ready to chat when you need an empathetic friend',
+    image: require('./images/assistant/replika.png'),
+    website: 'https://replika.ai/',
+    price: 0,
+    tags: ['assistant'],
+  },
+  {
+    id: 61,
+    title: "Artflow",
+    description: 'AI tool that lets you create your own, unique Animated Stories with original characters using assets generated with AI',
+    image: require('./images/video/artflow.png'),
+    website: 'https://artflow.ai/',
+    price: 0,
+    tags: ['video'],
+  },
+  {
+    id: 62,
+    title: "Gradescope",
+    description: 'AI assistant that helps you seamlessly administer and grade all of your assessments, whether online or in-class',
+    image: require('./images/assistant/gradescope.png'),
+    website: 'https://www.gradescope.com/',
+    price: 0,
+    tags: ['assistant', 'others'],
+  },
 ];
 
 export type Tool = {
@@ -549,11 +612,11 @@ export const Tags: {[type in TagType]: Tag} = {
     color: '#E52800',
   },
 
-  chatbot: {
-    label: translate({message: 'AI Chatbots'}),
+  assistant: {
+    label: translate({message: 'AI Assistant'}),
     description: translate({
-      message: 'chatbots powered by ai',
-      id: 'item.tag.chatbot.description',
+      message: 'assistants powered by ai',
+      id: 'item.tag.assistant.description',
     }),
     color: '#1163C0',
   },
@@ -646,6 +709,8 @@ function sortTools() {
   let result = Tools;
   // sort by tool name
   result = sortBy(result, (tool) => tool.title.toLowerCase());
+  // sort by price
+  result = sortBy(result, (tool) => tool.price);
   // sort by favorite tag, favorite first
   result = sortBy(result, (tool) => !tool.tags.includes('featured'));
   return result;

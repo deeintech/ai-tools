@@ -8,9 +8,9 @@ export type TagType =
   | 'writing'
   | 'video'
   | 'voice'
-  | 'gaming'
   | 'marketing'
   | 'search'
+  | 'coding'
   | 'crypto'
   | 'others';
 
@@ -326,10 +326,10 @@ const Tools: Tool[] = [
     id: 36,
     title: "Opus",
     description: 'AI tool that generates video games from text',
-    image: './images/gaming/opus.png',
+    image: './images/video/opus.png',
     website: 'https://opus.ai/',
     price: 0,
-    tags: ['video', 'gaming'],
+    tags: ['video'],
   },
   {
     id: 37,
@@ -746,15 +746,6 @@ const Tools: Tool[] = [
     tags: ['writing'],
   },
   {
-    id: 79,
-    title: "WordHero",
-    description: 'AI tool that creates original blog posts, social media content, emails, and more - in just seconds',
-    image: './images/writing/wordhero.png',
-    website: 'https://wordhero.co/',
-    price: 49,
-    tags: ['writing'],
-  },
-  {
     id: 80,
     title: "Zebracat",
     description: 'AI tool for creating awesome marketing videos 10X faster',
@@ -762,6 +753,177 @@ const Tools: Tool[] = [
     website: 'https://www.zebracat.ai/',
     price: 0,
     tags: ['video'],
+  },
+  {
+    id: 81,
+    title: "Multion",
+    description: `The world's first AI Web Co-Pilot powered by ChatGPT`,
+    image: './images/assistant/multion.png',
+    website: 'https://multion.ai/',
+    price: 0,
+    tags: ['assistant'],
+  },
+  {
+    id: 82,
+    title: "Luna",
+    description: `World's first AI app that suggests new high-quality leads every day and sends them the personal emails they deserve`,
+    image: './images/marketing/luna.png',
+    website: 'https://getluna.dev/',
+    price: 0,
+    tags: ['marketing', 'others'],
+  },
+  {
+    id: 83,
+    title: "EveryPixel",
+    description: 'Stock image search engine powered by AI',
+    image: './images/search/everypixel.png',
+    website: 'https://www.everypixel.com/',
+    price: 0,
+    tags: ['search', 'art'],
+  },
+  {
+    id: 84,
+    title: "Durable",
+    description: 'The AI website builder that generates an entire business website with images and copy in seconds',
+    image: './images/others/durable.png',
+    website: 'https://durable.co/',
+    price: 9,
+    tags: ['others'],
+  },
+  {
+    id: 85,
+    title: "Bertha",
+    description: 'AI tool for creating compelling marketing copy that engages your customers and drives conversions',
+    image: './images/marketing/bertha.png',
+    website: 'https://bertha.ai/',
+    price: 45,
+    tags: ['marketing', 'writing'],
+  },
+  {
+    id: 86,
+    title: "Bannerbear",
+    description: 'AI tool that helps you auto-generate social media visuals, ecommerce banners and more with REST API and integrations',
+    image: './images/marketing/bannerbear.png',
+    website: 'https://www.bannerbear.com/',
+    price: 49,
+    tags: ['marketing', 'coding'],
+  },
+  {
+    id: 87,
+    title: "AI Art Shop",
+    description: 'AI artist platform',
+    image: './images/art/aiartshop.png',
+    website: 'https://aiartshop.com/',
+    price: 0,
+    tags: ['art', 'crypto'],
+  },
+  {
+    id: 88,
+    title: "Copy Shark",
+    description: 'AI powered software that generates ad copy, product descriptions, sales copy, blog paragraphs, video scripts more',
+    image: './images/marketing/copyshark.png',
+    website: 'https://www.copyshark.ai/',
+    price: 59,
+    tags: ['marketing', 'writing'],
+  },
+  {
+    id: 89,
+    title: "ABtesting",
+    description: 'AI tool that helps with optimizing your landing page for conversions using AI A/B testing software',
+    image: './images/marketing/abtesting.png',
+    website: 'https://abtesting.ai/',
+    price: 0,
+    tags: ['marketing', 'others'],
+  },
+  {
+    id: 90,
+    title: "Systeme",
+    description: `World's easiest all-in-ane marketing platform for building funnels, websites, affiliate networks, courses, emails, etc.`,
+    image: './images/marketing/systeme.png',
+    website: 'https://systeme.io/',
+    price: 0,
+    tags: ['marketing', 'others'],
+  },
+  {
+    id: 91,
+    title: "Krisp",
+    description: 'AI tool that removes background voices, noises and echo from all your calls, giving you peace of mind',
+    image: './images/voice/krisp.png',
+    website: 'https://krisp.ai/',
+    price: 0,
+    tags: ['voice'],
+  },
+  {
+    id: 92,
+    title: "AssemblyAI",
+    description: 'AI tool that transcribes and understands speech and offers production-ready, scalable, and secure AI models through a simple API',
+    image: './images/voice/assemblyai.png',
+    website: 'https://www.assemblyai.com/',
+    price: 9,
+    tags: ['voice', 'coding'],
+  },
+  {
+    id: 93,
+    title: "Looka",
+    description: 'AI-powered platform to design a logo and build a brand you love',
+    image: './images/art/looka.png',
+    website: 'https://looka.com/',
+    price: 0,
+    tags: ['art', 'marketing'],
+  },
+  {
+    id: 94,
+    title: "BeautifulAI",
+    description: 'AI tool that creates presentations for you',
+    image: './images/marketing/beautifulai.png',
+    website: 'https://www.beautiful.ai/',
+    price: 12,
+    tags: ['marketing', 'others'],
+  },
+  {
+    id: 95,
+    title: "MyHeritage",
+    description: 'AI tool that creates presentations for you',
+    image: './images/art/myheritage.png',
+    website: 'https://www.myheritage.com/',
+    price: 0,
+    tags: ['art', 'others'],
+  },
+  {
+    id: 96,
+    title: "OpenAI Codex",
+    description: 'AI system that translates natural language to code',
+    image: './images/art/myheritage.png',
+    website: 'https://openai.com/blog/openai-codex',
+    price: 0,
+    tags: ['coding'],
+  },
+  {
+    id: 97,
+    title: "Unbounce",
+    description: 'AI-powered landing page builder with smart features that let you create beautiful, high-performing marketing campaigns in just a few minutes',
+    image: './images/marketing/unbounce.png',
+    website: 'https://unbounce.com/',
+    price: 74,
+    tags: ['marketing', 'others'],
+  },
+  {
+    id: 98,
+    title: "AvaMe",
+    description: 'AI-powered live captioning solution for deaf & hard-of-hearing people and inclusive organizations',
+    image: './images/others/avame.png',
+    website: 'https://www.ava.me/',
+    price: 0,
+    tags: ['others'],
+  },
+  {
+    id: 99,
+    title: "Headlime",
+    description: 'AI tools that generates marketing copy for you',
+    image: './images/writing/headlime.png',
+    website: 'https://headlime.com/',
+    price: 59,
+    tags: ['writing', 'marketing'],
   },
 ];
 
@@ -810,6 +972,16 @@ export const Tags: {[type in TagType]: Tag} = {
     color: '#7EA4B0',
   },
 
+  coding: {
+    label: translate({message: 'AI Coding'}),
+    description: translate({
+      message:
+        'coding tools powered by ai',
+      id: 'item.tag.coding.description',
+    }),
+    color: '#8555EE',
+  },
+
   art: {
     label: translate({message: 'AI Art'}),
     description: translate({
@@ -855,14 +1027,6 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'item.tag.marketing.description',
     }),
     color: '#93756C',
-  },
-  gaming: {
-    label: translate({message: 'AI Gaming'}),
-    description: translate({
-      message: 'gaming tools powered by ai',
-      id: 'item.tag.gaming.description',
-    }),
-    color: '#CD8ACA',
   },
 
   crypto: {

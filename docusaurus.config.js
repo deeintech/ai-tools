@@ -15,7 +15,15 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-google-gtag',
+      {
+        trackingID: 'G-1Y52XWT89P',
+        anonymizeIP: true,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',

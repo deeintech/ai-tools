@@ -883,7 +883,7 @@ const Tools: Tool[] = [
   {
     id: 95,
     title: "MyHeritage",
-    description: 'AI tool that creates presentations for you',
+    description: 'AI tool that reveals your unique ethnic background, and matches you with newfound relatives',
     image: './images/art/myheritage.png',
     website: 'https://www.myheritage.com/',
     price: 0,

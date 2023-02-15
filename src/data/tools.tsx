@@ -661,8 +661,17 @@ const Tools: Tool[] = [
     description: 'The #1 Organic Marketing Platform, with AI that powers your entire content lifecycle',
     image: require('./images/video/translate-video.png'),
     website: 'https://www.translate.video/',
-    price: 19,
+    price: 0,
     tags: ['video'],
+  },
+  {
+    id: 71,
+    title: "CustomGPT",
+    description: 'Personalized AI ChatBOT trained on your content',
+    image: require('./images/others/customgpt.png'),
+    website: 'https://customgpt.ai/',
+    price: 49,
+    tags: ['assistant', 'others'],
   },
 ];
 

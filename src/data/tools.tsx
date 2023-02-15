@@ -893,7 +893,7 @@ const Tools: Tool[] = [
     id: 96,
     title: "OpenAI Codex",
     description: 'AI system that translates natural language to code',
-    image: './images/art/myheritage.png',
+    image: './images/coding/codex.png',
     website: 'https://openai.com/blog/openai-codex',
     price: 0,
     tags: ['coding'],

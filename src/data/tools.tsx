@@ -126,12 +126,12 @@ const Tools: Tool[] = [
   },
   {
     id: 13,
-    title: "ChatSonic",
-    description: 'Conversational AI chatbot that addresses the limitations of ChatGPT',
-    image: './images/assistant/chatsonic.png',
+    title: "Writesonic",
+    description: 'Best AI writer and conversational AI chatbot that addresses the limitations of ChatGPT',
+    image: './images/assistant/writesonic.png',
     website: 'https://writesonic.com?via=deeintech',
     price: 0,
-    tags: ['assistant', 'writing', 'art', 'featured'],
+    tags: ['writing', 'art', 'assistant', 'featured'],
   },
   {
     id: 14,
@@ -232,14 +232,23 @@ const Tools: Tool[] = [
     price: 29,
     tags: ['writing'],
   },
-  {
-    id: 26,
-    title: "Writesonic",
-    description: 'AI writer that creates SEO-optimized and plagiarism-free content for your blogs, ads, emails, and website 10X faster',
-    image: './images/writing/writesonic.png',
-    website: 'https://writesonic.com?via=deeintech',
-    price: 13,
-    tags: ['writing'],
+    {
+    id: 25,
+    title: "Hoppy Copy",
+    description: 'AI tool to generate powerful copy for hundreds of different email marketing campaigns, drips, newsletters and more—in seconds',
+    image: './images/marketing/hoppycopy.png',
+    website: 'https://www.hoppycopy.co/?via=deeintech',
+    price: 23,
+    tags: ['marketing', 'writing'],
+  },
+    {
+    id: 109,
+    title: "Codium",
+    description: 'A code acceleration toolkit built on cutting edge AI technology',
+    image: './images/coding/codeium.png',
+    website: 'https://www.codeium.com/',
+    price: 0,
+    tags: ['coding'],
   },
   {
     id: 27,
@@ -1014,25 +1023,7 @@ const Tools: Tool[] = [
     website: 'https://mubert.com/render/pricing?via=deeintech',
     price: 0,
     tags: ['voice'],
-  },
-  {
-    id: 109,
-    title: "Codium",
-    description: 'A code acceleration toolkit built on cutting edge AI technology',
-    image: './images/coding/codeium.png',
-    website: 'https://www.codeium.com/',
-    price: 0,
-    tags: ['coding'],
-  },
-  {
-    id: 110,
-    title: "Hoppy Copy",
-    description: 'AI tool to generate powerful copy for hundreds of different email marketing campaigns, drips, newsletters and more—in seconds',
-    image: './images/marketing/hoppycopy.png',
-    website: 'https://www.hoppycopy.co/?via=deeintech',
-    price: 23,
-    tags: ['marketing', 'writing'],
-  },
+  }
 ];
 
 export type Tool = {

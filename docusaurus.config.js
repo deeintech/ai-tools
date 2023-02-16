@@ -59,7 +59,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `© ${new Date().getFullYear()} @deeintech`,
+        copyright: `© ${new Date().getFullYear()} hello@aitools.gg`,
       },
       prism: {
         theme: lightCodeTheme,

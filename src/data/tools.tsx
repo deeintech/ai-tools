@@ -122,7 +122,7 @@ const Tools: Tool[] = [
     image: './images/assistant/chat-gpt.png',
     website: 'https://chat.openai.com/chat/',
     price: 0,
-    tags: ['assistant', 'writing', 'featured'],
+    tags: ['assistant', 'writing'],
   },
   {
     id: 13,
@@ -329,7 +329,7 @@ const Tools: Tool[] = [
     image: './images/video/opus.png',
     website: 'https://opus.ai/',
     price: 0,
-    tags: ['video'],
+    tags: ['video', 'crypto'],
   },
   {
     id: 37,
@@ -338,7 +338,7 @@ const Tools: Tool[] = [
     image: './images/art/every-anyone.png',
     website: 'https://everyany.one/auth/signup/ub1wlbq32',
     price: 0,
-    tags: ['art'],
+    tags: ['art', 'crypto'],
   },
   {
     id: 38,
@@ -1068,16 +1068,7 @@ const Tools: Tool[] = [
     website: 'https://verasity.io/',
     price: 0,
     tags: ['crypto'],
-  },
-  {
-    id: 115,
-    title: "Colossyan",
-    description: 'AI tool for creating videos with AI actors',
-    image: './images/video/colossyan.png',
-    website: 'https://app.colossyan.com/affiliate?priceId=price_1KvhQCFQ1FW4qOXyZNQvkSVv&quantity=20&via=deeintech',
-    price: 0,
-    tags: ['video'],
-  },
+  }
 ];
 
 export type Tool = {

@@ -128,7 +128,7 @@ const Tools: Tool[] = [
     id: 13,
     title: "Writesonic",
     description: 'Best AI writer and conversational AI chatbot that addresses the limitations of ChatGPT',
-    image: './images/assistant/writesonic.png',
+    image: './images/writing/writesonic.png',
     website: 'https://writesonic.com?via=deeintech',
     price: 0,
     tags: ['writing', 'art', 'assistant', 'featured'],

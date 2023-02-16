@@ -131,7 +131,7 @@ const Tools: Tool[] = [
     image: './images/assistant/chatsonic.png',
     website: 'https://writesonic.com?via=deeintech',
     price: 0,
-    tags: ['assistant', 'writing', 'art'],
+    tags: ['assistant', 'writing', 'art', 'featured'],
   },
   {
     id: 14,

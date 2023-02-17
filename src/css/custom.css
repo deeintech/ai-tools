@@ -53,8 +53,12 @@
 }
 
 .card {
-  border-radius: 0 12px;
+  border-radius: 12px 0;
   background-color: var(--imf-color-gray-lighter);
+}
+
+.cardFavorite {
+  box-shadow: 5px 5px 5px 0 #888888c7 !important;
 }
 
 :focus-visible {

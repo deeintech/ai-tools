@@ -45,7 +45,7 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
   
   function CardItem({tool}: {tool: Tool}) {
     return (
-      <li key={tool.title} className="card shadow--md">
+      <li key={tool.title} className={tool.tags.includes('favorite') ? 'card shadow--md cardFavorite' : 'card shadow--md'}>
         <div className={clsx('card__image', styles.cardItemImage)}>
           <img src={tool.image} alt={tool.title} />
         </div>
@@ -64,7 +64,7 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
           <p className={styles.cardItemBody}>{tool.description}</p>
         </div>
         <ul className={clsx('card__footer', styles.cardFooter)}>
-          <CardItemTag tags={tool.tags} />
+          <CardItemTag tags={tool.tags.includes('favorite') ? tool.tags.filter(tag => !tag.includes('favorite')) : tool.tags} />
         </ul>
       </li>
     );

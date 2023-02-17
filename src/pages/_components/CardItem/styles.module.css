@@ -1,7 +1,7 @@
 .cardItemImage {
   overflow: hidden;
   height: 150px;
-  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
 }
 
 .cardItemHeader {

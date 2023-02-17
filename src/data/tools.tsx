@@ -2,16 +2,16 @@ import {translate} from '@docusaurus/Translate';
 import {sortBy} from '@site/src/utils/jsUtils';
 
 export type TagType =
-  | 'featured'
+  | 'favorite'
+  | 'freeplan'
+  | 'waitlist'
   | 'assistant'
   | 'art'
   | 'writing'
   | 'video'
   | 'voice'
   | 'marketing'
-  | 'search'
-  | 'coding'
-  | 'crypto'
+  | 'web3'
   | 'others';
 
 const Tools: Tool[] = [
@@ -35,12 +35,12 @@ const Tools: Tool[] = [
   },
   {
     id: 3,
-    title: "Page Optimizer Pro",
-    description: 'On page SEO tool that helps web marketers produce perfectly optimized pages for Google with ease',
-    image: './images/marketing/pageoptimizer.png',
-    website: 'https://pageoptimizer.pro/',
-    price: 49,
-    tags: ['marketing'],
+    title: "Mubert",
+    description: 'AI tool to generate music via text prompts',
+    image: './images/voice/mubert.png',
+    website: 'https://mubert.com/render/pricing?via=deeintech',
+    price: 14,
+    tags: ['voice', 'freeplan'],
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const Tools: Tool[] = [
     image: './images/crypto/mdxalgo.png',
     website: 'https://mdxalgo.com/?ref=fgjYK',
     price: 70,
-    tags: ['crypto'],
+    tags: ['web3'],
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ const Tools: Tool[] = [
     image: './images/crypto/verasity.png',
     website: 'https://verasity.io/',
     price: 0,
-    tags: ['crypto'],
+    tags: ['web3', 'video'],
   },
   {
     id: 8,
@@ -121,8 +121,8 @@ const Tools: Tool[] = [
     description: 'AI chatbot built by OpenAI that interacts in a conversational way',
     image: './images/assistant/chat-gpt.png',
     website: 'https://chat.openai.com/chat/',
-    price: 0,
-    tags: ['assistant', 'writing'],
+    price: 20,
+    tags: ['assistant', 'writing', 'freeplan'],
   },
   {
     id: 13,
@@ -130,8 +130,8 @@ const Tools: Tool[] = [
     description: 'Best AI writer and conversational AI chatbot that addresses the limitations of ChatGPT',
     image: './images/writing/writesonic.png',
     website: 'https://writesonic.com?via=deeintech',
-    price: 0,
-    tags: ['writing', 'art', 'assistant', 'featured'],
+    price: 13,
+    tags: ['writing', 'art', 'assistant', 'favorite'],
   },
   {
     id: 14,
@@ -146,10 +146,10 @@ const Tools: Tool[] = [
     id: 15,
     title: "Perplexity",
     description: 'AI-powered search engine and q&a tool',
-    image: './images/search/perplexity.png',
+    image: './images/others/perplexity.png',
     website: 'https://www.perplexity.ai/',
     price: 0,
-    tags: ['search'],
+    tags: ['others'],
   },
   {
     id: 16,
@@ -158,7 +158,7 @@ const Tools: Tool[] = [
     image: './images/assistant/you.png',
     website: 'https://you.com/',
     price: 0,
-    tags: ['assistant', 'search', 'writing'],
+    tags: ['assistant', 'writing'],
   },
   {
     id: 17,
@@ -211,8 +211,8 @@ const Tools: Tool[] = [
     description: 'AI writing assistant that helps you create high-quality content, in just a few seconds, at a fraction of the cost',
     image: './images/writing/rytr.png',
     website: 'https://rytr.me/?via=deeintech',
-    price: 0,
-    tags: ['writing'],
+    price: 9,
+    tags: ['writing', 'freeplan'],
   },
   {
     id: 23,
@@ -242,22 +242,22 @@ const Tools: Tool[] = [
     tags: ['marketing', 'writing'],
   },
     {
-    id: 109,
+    id: 26,
     title: "Codium",
     description: 'A code acceleration toolkit built on cutting edge AI technology',
     image: './images/coding/codeium.png',
     website: 'https://www.codeium.com/',
-    price: 0,
-    tags: ['coding'],
+    price: -1,
+    tags: ['others', 'waitlist'],
   },
   {
     id: 27,
-    title: "MarketMuse",
-    description: 'AI marketing tool that automates content audits and gives personalized insights for creating the best SEO content strategy',
-    image: './images/writing/marketmuse.png',
-    website: 'https://www.marketmuse.com/',
-    price: 0,
-    tags: ['writing', 'marketing'],
+    title: "ProfilePictureAI",
+    description: 'AI profile picture maker and generator',
+    image: './images/art/profilepicture.png',
+    website: 'https://www.profilepicture.ai/?via=deeintech',
+    price: 7,
+    tags: ['art'],
   },
   {
     id: 28,
@@ -283,17 +283,17 @@ const Tools: Tool[] = [
     description: 'AI text generator provided by Canva that helps to get out a first draft, fast',
     image: './images/writing/magic-write.png',
     website: 'https://www.canva.com/magic-write/',
-    price: 0,
-    tags: ['writing'],
+    price: 229,
+    tags: ['writing', 'freeplan'],
   },
   {
     id: 31,
     title: "InVideo",
-    description: 'Video creation tool with 5000+ ready-made templates and AI based Text-to-Video editor',
+    description: 'Video creation tool with 5000+ ready-made templates and AI based text-to-video editor',
     image: './images/video/invideo.png',
     website: 'https://invideo.sjv.io/deeintech',
-    price: 0,
-    tags: ['video'],
+    price: 15,
+    tags: ['video', 'favorite', 'freeplan'],
   },
   {
     id: 32,
@@ -302,7 +302,7 @@ const Tools: Tool[] = [
     image: './images/video/synthesia.png',
     website: 'https://www.synthesia.io/?via=deeintech',
     price: 30,
-    tags: ['video', 'featured'],
+    tags: ['video', 'favorite'],
   },
   {
     id: 33,
@@ -310,8 +310,8 @@ const Tools: Tool[] = [
     description: 'Video creation tool that turns your music into killer video with custom music visualizers',
     image: './images/video/specterr.png',
     website: 'https://specterr.com/?via=deeintech',
-    price: 0,
-    tags: ['video', 'voice'],
+    price: 15,
+    tags: ['video', 'voice', 'freeplan'],
   },
   {
     id: 34,
@@ -328,8 +328,8 @@ const Tools: Tool[] = [
     description: 'AI video creation platform that create videos from scripts or blog posts using realistic AI voices in 2 minutes',
     image: './images/video/fliki.png',
     website: 'https://fliki.ai/?via=deeintech',
-    price: 0,
-    tags: ['video', 'featured'],
+    price: 6,
+    tags: ['video', 'freeplan'],
   },
   {
     id: 36,
@@ -338,7 +338,7 @@ const Tools: Tool[] = [
     image: './images/video/opus.png',
     website: 'https://opus.ai/',
     price: 0,
-    tags: ['video', 'crypto'],
+    tags: ['video', 'web3'],
   },
   {
     id: 37,
@@ -347,16 +347,16 @@ const Tools: Tool[] = [
     image: './images/art/every-anyone.png',
     website: 'https://everyany.one/auth/signup/ub1wlbq32',
     price: 0,
-    tags: ['art', 'crypto'],
+    tags: ['art', 'web3'],
   },
   {
     id: 38,
-    title: "Metaphysic Studios",
-    description: 'AI content generation studio that creates impossible video featuring photorealistic synthetic humans',
-    image: './images/video/metaphysic.png',
-    website: 'https://metaphysic.ai/studios/',
-    price: 0,
-    tags: ['video', 'crypto'],
+    title: "Magic Studio",
+    description: 'A set of AI tools to create stunning profile pictures, remove background or unwanted objects from pictures, and more',
+    image: './images/art/magicstudio.png',
+    website: 'https://magicstudio.com/',
+    price: 3,
+    tags: ['art'],
   },
   {
     id: 39,
@@ -391,8 +391,8 @@ const Tools: Tool[] = [
     description: 'AI tool that removes video background automatically, without a single click',
     image: './images/video/unscreen.png',
     website: 'https://www.unscreen.com/',
-    price: 0,
-    tags: ['video'],
+    price: 5,
+    tags: ['video', 'freeplan'],
   },
   {
     id: 43,
@@ -401,16 +401,16 @@ const Tools: Tool[] = [
     image: './images/writing/syllaby.png',
     website: 'https://syllaby.io/?via=deeintech',
     price: 49,
-    tags: ['writing', 'featured'],
+    tags: ['writing', 'favorite'],
   },
   {
     id: 44,
     title: "Prime Voice AI",
-    description: 'The most realistic and versatile AI speech software that brings compelling, rich and lifelike voices to creators and publishers seeking the ultimate tools for storytelling. Bilt by Eleven Labs',
+    description: 'The most realistic and versatile AI speech software that brings compelling, rich and lifelike voices to creators and publishers seeking the ultimate tools for storytelling. Built by Eleven Labs',
     image: './images/voice/prime-voice-ai.png',
     website: 'https://beta.elevenlabs.io/',
-    price: 0,
-    tags: ['voice'],
+    price: 5,
+    tags: ['voice', 'freeplan'],
   },
   {
     id: 45,
@@ -418,8 +418,8 @@ const Tools: Tool[] = [
     description: 'AI content generator that helps to write higher converting posts and blogs 10x faster',
     image: './images/writing/copy-ai.png',
     website: 'https://www.copy.ai/?via=deeintech',
-    price: 0,
-    tags: ['writing', 'featured'],
+    price: 36,
+    tags: ['writing', 'favorite', 'freeplan'],
   },
   {
     id: 46,
@@ -427,8 +427,8 @@ const Tools: Tool[] = [
     description: 'Independent AI art generator that turns text-based prompts into images',
     image: './images/art/midjourney.png',
     website: 'https://www.midjourney.com/',
-    price: 0,
-    tags: ['art', 'featured'],
+    price: 8,
+    tags: ['art', 'favorite', 'freeplan'],
   },
   {
     id: 47,
@@ -436,8 +436,8 @@ const Tools: Tool[] = [
     description: 'The Stable Diffusion search engine and AI art generator',
     image: './images/art/lexica.png',
     website: 'https://lexica.art/',
-    price: 0,
-    tags: ['art', 'search'],
+    price: 8,
+    tags: ['art', 'freeplan'],
   },
   {
     id: 48,
@@ -453,9 +453,9 @@ const Tools: Tool[] = [
     title: "Descript",
     description: 'All-in-one video editing',
     image: './images/video/descript.png',
-    website: 'https://www.descript.com/',
-    price: 0,
-    tags: ['video'],
+    website: 'https://www.descript.com?lmref=UaU-LA',
+    price: 12,
+    tags: ['video', 'favorite', 'freeplan'],
   },
   {
     id: 50,
@@ -463,8 +463,8 @@ const Tools: Tool[] = [
     description: 'Online video editing software that helps to cut, trim, collide, traslate your clips, add subtitles, and more',
     image: './images/video/nova.png',
     website: 'https://app.wearenova.ai/signup?ref=deeintech',
-    price: 0,
-    tags: ['video'],
+    price: 10,
+    tags: ['video', 'freeplan'],
   },
   {
     id: 51,
@@ -490,8 +490,8 @@ const Tools: Tool[] = [
     description: 'AI system that can create realistic images and art from a description in natural language',
     image: './images/art/dalle-2.png',
     website: 'https://openai.com/dall-e-2/',
-    price: 0,
-    tags: ['art'],
+    price: 15,
+    tags: ['art', 'freeplan'],
   },
   {
     id: 53,
@@ -508,8 +508,8 @@ const Tools: Tool[] = [
     description: 'A neural net that generates music, including rudimentary singing, as raw audio in a variety of genres and artist styles',
     image: './images/voice/jukebox.png',
     website: 'https://openai.com/blog/jukebox/',
-    price: 0,
-    tags: ['voice'],
+    price: -1,
+    tags: ['voice', 'waitlist'],
   },
   {
     id: 55,
@@ -517,8 +517,8 @@ const Tools: Tool[] = [
     description: 'A neural net that generates music, including rudimentary singing, as raw audio in a variety of genres and artist styles',
     image: './images/voice/aiva.png',
     website: 'https://www.aiva.ai/',
-    price: 0,
-    tags: ['voice'],
+    price: 11,
+    tags: ['voice', 'freeplan'],
   },
   {
     id: 55,
@@ -526,8 +526,8 @@ const Tools: Tool[] = [
     description: 'AI tool that makes original songs in seconds',
     image: './images/voice/boomy.png',
     website: 'https://boomy.com/',
-    price: 0,
-    tags: ['voice'],
+    price: 3,
+    tags: ['voice', 'freeplan'],
   },
   {
     id: 56,
@@ -535,8 +535,8 @@ const Tools: Tool[] = [
     description: 'AI assitant powered by Notion for generation of any type of content faster',
     image: './images/writing/notion-ai.png',
     website: 'https://www.notion.so/product/ai',
-    price: 0,
-    tags: ['writing'],
+    price: -1,
+    tags: ['writing', 'waitlist'],
   },
   {
     id: 57,
@@ -544,8 +544,8 @@ const Tools: Tool[] = [
     description: 'AI assitant built by Adept that executes high-level user requests automatically',
     image: './images/assistant/act-1.png',
     website: 'https://www.adept.ai/act',
-    price: 0,
-    tags: ['assistant'],
+    price: -1,
+    tags: ['assistant', 'waitlist'],
   },
   {
     id: 58,
@@ -553,8 +553,8 @@ const Tools: Tool[] = [
     description: 'AI-powered writing assistant for composing bold, clear, mistake-free writing',
     image: './images/writing/grammarly.png',
     website: 'https://www.grammarly.com/',
-    price: 0,
-    tags: ['writing'],
+    price: 12,
+    tags: ['writing', 'freeplan'],
   },
   {
     id: 59,
@@ -571,8 +571,8 @@ const Tools: Tool[] = [
     description: 'An AI companion who cares and is ready to chat when you need an empathetic friend',
     image: './images/assistant/replika.png',
     website: 'https://replika.ai/',
-    price: 0,
-    tags: ['assistant'],
+    price: 6,
+    tags: ['assistant', 'freeplan'],
   },
   {
     id: 61,
@@ -580,17 +580,17 @@ const Tools: Tool[] = [
     description: 'AI tool that lets you create your own, unique Animated Stories with original characters using assets generated with AI',
     image: './images/video/artflow.png',
     website: 'https://artflow.ai/',
-    price: 0,
-    tags: ['video'],
+    price: -1,
+    tags: ['video', 'waitlist'],
   },
   {
     id: 62,
-    title: "Gradescope",
-    description: 'AI assistant that helps you seamlessly administer and grade all of your assessments, whether online or in-class',
-    image: './images/assistant/gradescope.png',
-    website: 'https://www.gradescope.com/',
-    price: 0,
-    tags: ['assistant', 'others'],
+    title: "Ad Creative AI",
+    description: `AI tool to generate conversion focused ad creatives and social media post creatives in a matter of seconds`,
+    image: './images/marketing/adcreative.png',
+    website: 'https://free-trial.adcreative.ai/63k28gi0mi4f',
+    price: 29,
+    tags: ['marketing', 'favorite'],
   },
   {
     id: 63,
@@ -598,8 +598,8 @@ const Tools: Tool[] = [
     description: 'AI assistant that provides faculty and students with real-time captions and notes for in-person and virtual lectures, classes or meetings',
     image: './images/assistant/otter.png',
     website: 'https://otter.ai/education',
-    price: 0,
-    tags: ['assistant', 'others'],
+    price: 8,
+    tags: ['assistant', 'others', 'freeplan'],
   },
   {
     id: 63,
@@ -607,8 +607,8 @@ const Tools: Tool[] = [
     description: 'AI assistant that transforms your text instructions into Excel formulas in seconds',
     image: './images/assistant/excelformulabot.png',
     website: 'https://excelformulabot.com/',
-    price: 0,
-    tags: ['assistant', 'others'],
+    price: 7,
+    tags: ['assistant', 'others', 'freeplan'],
   },
   {
     id: 64,
@@ -616,8 +616,8 @@ const Tools: Tool[] = [
     description: 'AI assistant for Content & SEO, replaces 10+ apps for you with its AI magic & a simple WordPress Plugin',
     image: './images/writing/getgenie.png',
     website: 'https://getgenie.ai?rui=313',
-    price: 0,
-    tags: ['writing', 'marketing'],
+    price: 19,
+    tags: ['writing', 'marketing', 'freeplan'],
   },
   {
     id: 65,
@@ -625,8 +625,8 @@ const Tools: Tool[] = [
     description: 'AI assistant for outlining ideas and creating professional videos with realistic avatars',
     image: './images/video/quinvio.png',
     website: 'https://www.quinv.io/ai',
-    price: 0,
-    tags: ['video'],
+    price: 30,
+    tags: ['video', 'freeplan'],
   },
   {
     id: 66,
@@ -643,8 +643,8 @@ const Tools: Tool[] = [
     description: 'A personalized news feed driven by artificial intelligence',
     image: './images/others/artifact.png',
     website: 'https://artifact.news/',
-    price: 0,
-    tags: ['others'],
+    price: -1,
+    tags: ['others', 'waitlist'],
   },
   {
     id: 68,
@@ -660,7 +660,7 @@ const Tools: Tool[] = [
     title: "Scalenut",
     description: 'The #1 Organic Marketing Platform, with AI that powers your entire content lifecycle',
     image: './images/marketing/scalenut.png',
-    website: 'https://www.scalenut.com/',
+    website: 'https://scalenut.com/?fpr=deeintech',
     price: 19,
     tags: ['marketing'],
   },
@@ -670,8 +670,8 @@ const Tools: Tool[] = [
     description: 'The #1 Organic Marketing Platform, with AI that powers your entire content lifecycle',
     image: './images/video/translate-video.png',
     website: 'https://www.translate.video/',
-    price: 0,
-    tags: ['video'],
+    price: 29,
+    tags: ['video', 'freeplan'],
   },
   {
     id: 71,
@@ -688,8 +688,8 @@ const Tools: Tool[] = [
     description: 'AI-powered editing and audio & video recording tool',
     image: './images/voice/podcastle.png',
     website: 'https://podcastle.ai/',
-    price: 0,
-    tags: ['voice'],
+    price: 12,
+    tags: ['voice', 'freeplan'],
   },
   {
     id: 73,
@@ -706,8 +706,8 @@ const Tools: Tool[] = [
     description: 'AI tool that automatically writes ad copy, product descriptions, and more',
     image: './images/writing/copygenius.png',
     website: 'https://copygenius.io?ref=deeintech',
-    price: 0,
-    tags: ['writing'],
+    price: 19,
+    tags: ['writing', 'freeplan'],
   },
   {
     id: 75,
@@ -715,7 +715,7 @@ const Tools: Tool[] = [
     description: 'Content generator that helps to write perfect SEO-friendly content for blog posts, website pages, and articles with AI',
     image: './images/writing/growthbar.png',
     website: 'https://growthbarseo.com/deeintech?afmc=fp',
-    price: 0,
+    price: 29,
     tags: ['writing'],
   },
   {
@@ -760,8 +760,8 @@ const Tools: Tool[] = [
     description: 'AI tool for creating awesome marketing videos 10X faster',
     image: './images/video/zebracat.png',
     website: 'https://www.zebracat.ai/',
-    price: 0,
-    tags: ['video'],
+    price: -1,
+    tags: ['video', 'waitlist'],
   },
   {
     id: 81,
@@ -769,8 +769,8 @@ const Tools: Tool[] = [
     description: `The world's first AI Web Co-Pilot powered by ChatGPT`,
     image: './images/assistant/multion.png',
     website: 'https://multion.ai/',
-    price: 0,
-    tags: ['assistant'],
+    price: -1,
+    tags: ['assistant', 'waitlist'],
   },
   {
     id: 82,
@@ -778,17 +778,17 @@ const Tools: Tool[] = [
     description: `World's first AI app that suggests new high-quality leads every day and sends them the personal emails they deserve`,
     image: './images/marketing/luna.png',
     website: 'https://getluna.dev/',
-    price: 0,
-    tags: ['marketing', 'others'],
+    price: 100,
+    tags: ['marketing', 'freeplan'],
   },
   {
     id: 83,
     title: "Every Pixel",
     description: 'Stock image search engine powered by AI',
-    image: './images/search/everypixel.png',
+    image: './images/art/everypixel.png',
     website: 'https://www.everypixel.com/',
     price: 0,
-    tags: ['search', 'art'],
+    tags: ['art'],
   },
   {
     id: 84,
@@ -815,7 +815,7 @@ const Tools: Tool[] = [
     image: './images/marketing/bannerbear.png',
     website: 'https://www.bannerbear.com/?via=deeintech',
     price: 49,
-    tags: ['marketing', 'coding'],
+    tags: ['marketing', 'others'],
   },
   {
     id: 87,
@@ -824,7 +824,7 @@ const Tools: Tool[] = [
     image: './images/art/aiartshop.png',
     website: 'https://aiartshop.com/?ref=deeintech',
     price: 0,
-    tags: ['art', 'crypto'],
+    tags: ['art', 'web3'],
   },
   {
     id: 88,
@@ -841,8 +841,8 @@ const Tools: Tool[] = [
     description: 'AI tool that helps with optimizing your landing page for conversions using AI A/B testing software',
     image: './images/marketing/abtesting.png',
     website: 'https://abtesting.ai/?via=deeintech',
-    price: 0,
-    tags: ['marketing', 'others'],
+    price: 19,
+    tags: ['marketing', 'freeplan'],
   },
   {
     id: 90,
@@ -850,8 +850,8 @@ const Tools: Tool[] = [
     description: `World's easiest all-in-ane marketing platform for building funnels, websites, affiliate networks, courses, emails, etc.`,
     image: './images/marketing/systeme.png',
     website: 'https://systeme.io/',
-    price: 0,
-    tags: ['marketing', 'others'],
+    price: 27,
+    tags: ['marketing', 'freeplan'],
   },
   {
     id: 91,
@@ -859,8 +859,8 @@ const Tools: Tool[] = [
     description: 'AI tool that removes background voices, noises and echo from all your calls, giving you peace of mind',
     image: './images/voice/krisp.png',
     website: 'https://krisp.ai/',
-    price: 0,
-    tags: ['voice'],
+    price: 8,
+    tags: ['voice', 'freeplan'],
   },
   {
     id: 92,
@@ -869,7 +869,7 @@ const Tools: Tool[] = [
     image: './images/voice/assemblyai.png',
     website: 'https://www.assemblyai.com/',
     price: 9,
-    tags: ['voice', 'coding'],
+    tags: ['voice', 'others'],
   },
   {
     id: 93,
@@ -877,7 +877,7 @@ const Tools: Tool[] = [
     description: 'AI-powered platform to design a logo and build a brand you love',
     image: './images/art/looka.png',
     website: 'https://looka.com/',
-    price: 0,
+    price: 20,
     tags: ['art', 'marketing'],
   },
   {
@@ -895,8 +895,8 @@ const Tools: Tool[] = [
     description: 'AI tool that reveals your unique ethnic background, and matches you with newfound relatives',
     image: './images/art/myheritage.png',
     website: 'https://www.myheritage.com/',
-    price: 0,
-    tags: ['art'],
+    price: 79,
+    tags: ['art', 'freeplan'],
   },
   {
     id: 96,
@@ -904,8 +904,8 @@ const Tools: Tool[] = [
     description: 'AI system that translates natural language to code',
     image: './images/coding/codex.png',
     website: 'https://openai.com/blog/openai-codex',
-    price: 0,
-    tags: ['coding'],
+    price: 18,
+    tags: ['others'],
   },
   {
     id: 97,
@@ -922,7 +922,7 @@ const Tools: Tool[] = [
     description: 'AI-powered live captioning solution for deaf & hard-of-hearing people and inclusive organizations',
     image: './images/others/avame.png',
     website: 'https://www.ava.me/',
-    price: 0,
+    price: 119,
     tags: ['others'],
   },
   {
@@ -940,8 +940,8 @@ const Tools: Tool[] = [
     description: 'AI-powered paraphrasing tool will enhance your writing',
     image: './images/writing/quillbot.png',
     website: 'https://quillbot.com/',
-    price: 0,
-    tags: ['writing', 'marketing'],
+    price: 4,
+    tags: ['writing', 'marketing', 'freeplan'],
   },
   {
     id: 101,
@@ -949,8 +949,8 @@ const Tools: Tool[] = [
     description: 'AI image tool for creating art, social media posts, presentations, posters, videos, logos and more',
     image: './images/art/playgroundai.png',
     website: 'https://playgroundai.com/',
-    price: 0,
-    tags: ['art'],
+    price: 10,
+    tags: ['art', 'freeplan'],
   },
   {
     id: 102,
@@ -958,8 +958,8 @@ const Tools: Tool[] = [
     description: `AI tool that generates ready to upload shorts, no editing skills required`,
     image: './images/video/dumme.png',
     website: 'https://dumme.com/',
-    price: 0,
-    tags: ['video'],
+    price: -1,
+    tags: ['video', 'waitlist'],
   },
   {
     id: 103,
@@ -976,8 +976,8 @@ const Tools: Tool[] = [
     description: `AI content writer and outliner that helps to build a second brain for your teams`,
     image: './images/writing/taskade.png',
     website: 'https://www.taskade.com/?via=deeintech',
-    price: 0,
-    tags: ['writing', 'others'],
+    price: 19,
+    tags: ['writing', 'others', 'freeplan'],
   },
   {
     id: 105,
@@ -985,44 +985,8 @@ const Tools: Tool[] = [
     description: `AI tool to colorize pictures automatically`,
     image: './images/art/palette.png',
     website: 'https://palette.fm/',
-    price: 0,
-    tags: ['art'],
-  },
-  {
-    id: 106,
-    title: "Ad Creative AI",
-    description: `AI tool to generate conversion focused ad creatives and social media post creatives in a matter of seconds`,
-    image: './images/marketing/adcreative.png',
-    website: 'https://free-trial.adcreative.ai/63k28gi0mi4f',
-    price: 29,
-    tags: ['marketing', 'featured'],
-  },
-  {
-    id: 107,
-    title: "Magic Studio",
-    description: 'A set of AI tools to create stunning profile pictures, remove background or unwanted objects from pictures, and more',
-    image: './images/art/magicstudio.png',
-    website: 'https://magicstudio.com/',
-    price: 3,
-    tags: ['art'],
-  },
-  {
-    id: 108,
-    title: "ProfilePictureAI",
-    description: 'AI profile picture maker and generator',
-    image: './images/art/profilepicture.png',
-    website: 'https://www.profilepicture.ai/?via=deeintech',
-    price: 7,
-    tags: ['art'],
-  },
-  {
-    id: 108,
-    title: "Mubert",
-    description: 'AI tool to generate music via text prompts',
-    image: './images/voice/mubert.png',
-    website: 'https://mubert.com/render/pricing?via=deeintech',
-    price: 0,
-    tags: ['voice'],
+    price: 9,
+    tags: ['art', 'freeplan'],
   }
 ];
 
@@ -1043,14 +1007,34 @@ export type Tag = {
 };
 
 export const Tags: {[type in TagType]: Tag} = {
-  featured: {
-    label: translate({message: 'Featured'}),
+  favorite: {
+    label: translate({message: 'Favorite'}),
     description: translate({
       message:
         'our favorite AI tools that you must absolutely check out!',
-      id: 'item.tag.featured.description',
+      id: 'item.tag.favorite.description',
     }),
-    color: '#E52800',
+    color: '#E56969',
+  },
+
+  freeplan: {
+    label: translate({message: 'Free plan'}),
+    description: translate({
+      message:
+        'AI tools with free plan!',
+      id: 'item.tag.freeplan.description',
+    }),
+    color: '#B7D7B2',
+  },
+
+  waitlist: {
+    label: translate({message: 'Waitlist'}),
+    description: translate({
+      message:
+        `AI tools that you can get access only if you're on a waitlist!`,
+      id: 'item.tag.waitlist.description',
+    }),
+    color: '#B7DDD6',
   },
 
   assistant: {
@@ -1060,25 +1044,6 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'item.tag.assistant.description',
     }),
     color: '#1163C0',
-  },
-
-  search: {
-    label: translate({message: 'AI Search'}),
-    description: translate({
-      message: 'search tools powered by ai',
-      id: 'item.tag.search.description',
-    }),
-    color: '#7EA4B0',
-  },
-
-  coding: {
-    label: translate({message: 'AI Coding'}),
-    description: translate({
-      message:
-        'coding tools powered by ai',
-      id: 'item.tag.coding.description',
-    }),
-    color: '#8555EE',
   },
 
   art: {
@@ -1128,8 +1093,8 @@ export const Tags: {[type in TagType]: Tag} = {
     color: '#93756C',
   },
 
-  crypto: {
-    label: translate({message: 'AI Crypto'}),
+  web3: {
+    label: translate({message: 'AI Web3'}),
     description: translate({
       message: 'crypto tools powered by ai',
       id: 'item.tag.crypto.description',
@@ -1155,7 +1120,7 @@ function sortTools() {
   // sort by price
   result = sortBy(result, (tool) => tool.price);
   // sort by favorite tag, favorite first
-  result = sortBy(result, (tool) => !tool.tags.includes('featured'));
+  result = sortBy(result, (tool) => !tool.tags.includes('favorite'));
   return result;
 }
 

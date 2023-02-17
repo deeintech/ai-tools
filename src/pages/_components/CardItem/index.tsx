@@ -56,10 +56,10 @@ const TagComp = React.forwardRef<HTMLLIElement, Tag>(
                 {tool.title}
               </Link>
             </Heading>
-            {tool.tags.includes('featured') && (
+            {tool.tags.includes('favorite') && (
               <FavoriteIcon svgClass={styles.svgIconFavorite} size="small" />
             )}
-            {(tool.price !== 0) ? `$${tool.price}+` : 'free'}
+            {(tool.price !== -1) ? ((tool.price === 0) ? 'free' : `$${tool.price}+`) : 'waitlist'}
           </div>
           <p className={styles.cardItemBody}>{tool.description}</p>
         </div>

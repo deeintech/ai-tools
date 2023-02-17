@@ -119,7 +119,7 @@ function CardFilters() {
                   id={id}
                   label={label}
                   icon={
-                    tag === 'featured' ? (
+                    tag === 'favorite' ? (
                       <FavoriteIcon svgClass={styles.svgIconFavoriteXs} />
                     ) : (
                       <span

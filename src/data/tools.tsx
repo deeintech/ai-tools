@@ -192,7 +192,7 @@ const Tools: Tool[] = [
     title: "INK For All",
     description: 'All-in-one AI content platform that helps to create SEO-optimized text and visuals 10X faster & easier with built-in protection against plagiarism',
     image: './images/writing/ink.png',
-    website: 'https://inkforall.com/',
+    website: 'https://inkforall.com/?fpr=deeintech',
     price: 39,
     tags: ['writing'],
   },

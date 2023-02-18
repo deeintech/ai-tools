@@ -60,15 +60,14 @@ const Tools: Tool[] = [
     price: 70,
     tags: ['web3'],
   },
-  {
+    {
     id: 6,
-    title: 'Semrush',
-    description:
-    '50+ tools on SEO, content marketing, competitor research, PPC and social media marketing to help you attract and grow your audience online faster',
-    image: './images/marketing/semrush.png',
-    website: 'https://www.semrush.com',
-    price: 119,
-    tags: ['marketing'],
+    title: "PaletteAI",
+    description: `AI tool to colorize pictures automatically`,
+    image: './images/art/palette.png',
+    website: 'https://palette.fm/',
+    price: 9,
+    tags: ['art', 'freeplan'],
   },
   {
     id: 7,
@@ -978,15 +977,6 @@ const Tools: Tool[] = [
     website: 'https://www.taskade.com/?via=deeintech',
     price: 19,
     tags: ['writing', 'others', 'freeplan'],
-  },
-  {
-    id: 105,
-    title: "PaletteAI",
-    description: `AI tool to colorize pictures automatically`,
-    image: './images/art/palette.png',
-    website: 'https://palette.fm/',
-    price: 9,
-    tags: ['art', 'freeplan'],
   }
 ];
 

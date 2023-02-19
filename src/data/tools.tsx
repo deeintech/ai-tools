@@ -586,7 +586,7 @@ const Tools: Tool[] = [
     id: 62,
     title: "Ad Creative AI",
     description: `AI tool to generate conversion focused ad creatives and social media post creatives in a matter of seconds`,
-    image: './images/marketing/adcreative.png',
+    image: './images/marketing/adcreativeai.png',
     website: 'https://free-trial.adcreative.ai/63k28gi0mi4f',
     price: 29,
     tags: ['marketing', 'favorite'],

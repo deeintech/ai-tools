@@ -54,6 +54,7 @@ const config = {
         //   },
         // ],
       },
+      metadata: [{name: 'p:domain_verify', content: '4a5ea85805cf184c6be8b67c0cdc5e1a'}],
       colorMode: {
         defaultMode: 'dark',
       },

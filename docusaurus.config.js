@@ -34,8 +34,11 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        googleTagManager: {
+          containerId: 'GTM-P9NZS4L',
+        },
       }),
-    ],
+    ]
   ],
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */

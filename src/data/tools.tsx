@@ -1103,6 +1103,33 @@ const Tools: Tool[] = [
     website: 'https://www.usegalileo.ai/',
     price: -1,
     tags: ['marketing', 'art', 'waitlist'],
+  },
+  {
+    id: 120,
+    title: "Iliad",
+    description: 'AI generation system for game designers',
+    image: './images/others/iliad.png',
+    website: 'https://iliad.ai/',
+    price: -1,
+    tags: ['others', 'art', 'waitlist'],
+  },
+  {
+    id: 121,
+    title: "Fini",
+    description: 'AI tool that that turns your knowledge base into AI chat',
+    image: './images/others/fini.png',
+    website: 'https://www.usefini.com/',
+    price: 499,
+    tags: ['others', 'freeplan'],
+  },
+  {
+    id: 122,
+    title: "Needl",
+    description: 'AI tool that allows to search for anything in one unified app',
+    image: './images/others/needl.png',
+    website: 'https://www.needl.tech/',
+    price: 10,
+    tags: ['others', 'freeplan'],
   }
 ];
 

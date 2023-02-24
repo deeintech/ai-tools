@@ -11,7 +11,6 @@ export type TagType =
   | 'video'
   | 'voice'
   | 'marketing'
-  | 'gaming'
   | 'web3'
   | 'others';
 
@@ -338,7 +337,7 @@ const Tools: Tool[] = [
     image: './images/video/opus.png',
     website: 'https://opus.ai/',
     price: 0,
-    tags: ['video', 'web3', 'gaming'],
+    tags: ['video', 'web3'],
   },
   {
     id: 37,
@@ -1022,7 +1021,7 @@ const Tools: Tool[] = [
     image: './images/art/leonardo.png',
     website: 'https://leonardo.ai/',
     price: -1,
-    tags: ['art', 'gaming', 'waitlist'],
+    tags: ['art', 'others', 'waitlist'],
   },
   {
     id: 110,
@@ -1041,6 +1040,15 @@ const Tools: Tool[] = [
     website: 'https://waymark.com/',
     price: 250,
     tags: ['video'],
+  },
+  {
+    id: 112,
+    title: "Scenario",
+    description: 'AI tool for creating high-quality, style-consistent, proprietary assets for your games',
+    image: './images/art/scenario.png',
+    website: 'https://www.scenario.gg/',
+    price: -1,
+    tags: ['art', 'others', 'waitlist'],
   }
 ];
 
@@ -1145,15 +1153,6 @@ export const Tags: {[type in TagType]: Tag} = {
       id: 'item.tag.marketing.description',
     }),
     color: '#93756C',
-  },
-
-  gaming: {
-    label: translate({message: 'AI Gaming'}),
-    description: translate({
-      message: 'best gaming tools powered by ai',
-      id: 'item.tag.gaming.description',
-    }),
-    color: '#4E31AA',
   },
 
   web3: {

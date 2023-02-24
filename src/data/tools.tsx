@@ -11,6 +11,7 @@ export type TagType =
   | 'video'
   | 'voice'
   | 'marketing'
+  | 'gaming'
   | 'web3'
   | 'others';
 
@@ -71,12 +72,12 @@ const Tools: Tool[] = [
   },
   {
     id: 7,
-    title: "Verasity",
-    description: 'Blockchain-based solution to end video ad-fraud',
-    image: './images/crypto/verasity.png',
-    website: 'https://verasity.io/',
-    price: 0,
-    tags: ['web3', 'video'],
+    title: "Akash AI",
+    description: 'AI development software',
+    image: './images/crypto/akashai.png',
+    website: 'https://www.akashnet.ai/',
+    price: -1,
+    tags: ['web3', 'others', 'waitlist'],
   },
   {
     id: 8,
@@ -130,7 +131,7 @@ const Tools: Tool[] = [
     image: './images/writing/writesonic.png',
     website: 'https://writesonic.com?via=deeintech',
     price: 13,
-    tags: ['writing', 'art', 'assistant', 'favorite'],
+    tags: ['writing', 'art', 'assistant'],
   },
   {
     id: 14,
@@ -166,7 +167,7 @@ const Tools: Tool[] = [
     image: './images/writing/jasper.png',
     website: 'https://jasper.ai?utm_source=partner&fpr=deeintech',
     price: 49,
-    tags: ['writing', 'art'],
+    tags: ['writing', 'art', 'favorite'],
   },
   {
     id: 18,
@@ -244,7 +245,7 @@ const Tools: Tool[] = [
     id: 26,
     title: "Codium",
     description: 'A code acceleration toolkit built on cutting edge AI technology',
-    image: './images/coding/codeium.png',
+    image: './images/others/codeium.png',
     website: 'https://www.codeium.com/',
     price: -1,
     tags: ['others', 'waitlist'],
@@ -337,7 +338,7 @@ const Tools: Tool[] = [
     image: './images/video/opus.png',
     website: 'https://opus.ai/',
     price: 0,
-    tags: ['video', 'web3'],
+    tags: ['video', 'web3', 'gaming'],
   },
   {
     id: 37,
@@ -400,7 +401,7 @@ const Tools: Tool[] = [
     image: './images/writing/syllaby.png',
     website: 'https://syllaby.io/?via=deeintech',
     price: 49,
-    tags: ['writing', 'favorite'],
+    tags: ['writing'],
   },
   {
     id: 44,
@@ -418,7 +419,7 @@ const Tools: Tool[] = [
     image: './images/writing/copy-ai.png',
     website: 'https://www.copy.ai/?via=deeintech',
     price: 36,
-    tags: ['writing', 'favorite', 'freeplan'],
+    tags: ['writing', 'freeplan'],
   },
   {
     id: 46,
@@ -901,7 +902,7 @@ const Tools: Tool[] = [
     id: 96,
     title: "OpenAI Codex",
     description: 'AI system that translates natural language to code',
-    image: './images/coding/codex.png',
+    image: './images/others/codex.png',
     website: 'https://openai.com/blog/openai-codex',
     price: 18,
     tags: ['others'],
@@ -977,6 +978,69 @@ const Tools: Tool[] = [
     website: 'https://www.taskade.com/?via=deeintech',
     price: 19,
     tags: ['writing', 'others', 'freeplan'],
+  },
+  {
+    id: 105,
+    title: "Topaz Labs",
+    description: 'AI software that improves your photo and video quality with cutting-edge image enhancement technology',
+    image: './images/art/topaz-labs.png',
+    website: 'https://www.topazlabs.com/',
+    price: 199,
+    tags: ['art', 'video'],
+  },
+  {
+    id: 106,
+    title: "Voice AI",
+    description: 'Real-time AI voice changer',
+    image: './images/voice/voiceai.png',
+    website: 'https://voice.ai/',
+    price: 0,
+    tags: ['voice'],
+  },
+  {
+    id: 107,
+    title: "Leads Gorilla",
+    description: 'AI-powered lead finder',
+    image: './images/others/leadsgorilla.png',
+    website: 'https://leadsgorilla.io',
+    price: 47,
+    tags: ['others'],
+  },
+  {
+    id: 108,
+    title: "Steve AI",
+    description: 'AI-powered professional video maker',
+    image: './images/video/steve-ai.png',
+    website: 'https://www.steve.ai/',
+    price: 15,
+    tags: ['video'],
+  },
+  {
+    id: 109,
+    title: "Leonardo AI",
+    description: 'AI tool for creating stunning game assets',
+    image: './images/art/leonardo.png',
+    website: 'https://leonardo.ai/',
+    price: -1,
+    tags: ['art', 'gaming', 'waitlist'],
+  },
+  {
+    id: 110,
+    title: "Kaiber AI",
+    description: 'AI tool that transform your ideas into the visual stories of your dreams with our state-of-the-art AI generation engine',
+    image: './images/art/kaiber.png',
+    website: 'https://www.kaiber.ai/',
+    price: 15,
+    tags: ['art'],
+  },
+  {
+    id: 111,
+    title: "Waymark",
+    description: 'AI video generator that creates TV, CTV and digital commercials',
+    image: './images/video/waymark.png',
+    website: 'https://waymark.com/',
+    price: 250,
+    tags: ['video'],
   }
 ];
 
@@ -1030,7 +1094,7 @@ export const Tags: {[type in TagType]: Tag} = {
   assistant: {
     label: translate({message: 'AI Assistant'}),
     description: translate({
-      message: 'assistants powered by ai',
+      message: 'best assistants powered by ai',
       id: 'item.tag.assistant.description',
     }),
     color: '#1163C0',
@@ -1039,7 +1103,7 @@ export const Tags: {[type in TagType]: Tag} = {
   art: {
     label: translate({message: 'AI Art'}),
     description: translate({
-      message: 'art tools powered by ai',
+      message: 'best art tools powered by ai',
       id: 'item.tag.art.description',
     }),
     color: '#EAB51B',
@@ -1048,7 +1112,7 @@ export const Tags: {[type in TagType]: Tag} = {
   writing: {
     label: translate({message: 'AI Writing'}),
     description: translate({
-      message: 'writing tools powered by ai',
+      message: 'best writing tools powered by ai',
       id: 'item.tag.text.description',
     }),
     color: '#505984',
@@ -1058,7 +1122,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Video'}),
     description: translate({
       message:
-        'video tools powered by ai',
+        'best video tools powered by ai',
       id: 'item.tag.video.description',
     }),
     color: '#29C7DD',
@@ -1068,7 +1132,7 @@ export const Tags: {[type in TagType]: Tag} = {
     label: translate({message: 'AI Voice'}),
     description: translate({
       message:
-        'audio tools powered by ai',
+        'best audio tools powered by ai',
       id: 'item.tag.voice.description',
     }),
     color: '#9B6F9B',
@@ -1077,16 +1141,25 @@ export const Tags: {[type in TagType]: Tag} = {
   marketing: {
     label: translate({message: 'AI Marketing'}),
     description: translate({
-      message: 'marketing tools powered by ai',
+      message: 'best marketing tools powered by ai',
       id: 'item.tag.marketing.description',
     }),
     color: '#93756C',
   },
 
+  gaming: {
+    label: translate({message: 'AI Gaming'}),
+    description: translate({
+      message: 'best gaming tools powered by ai',
+      id: 'item.tag.gaming.description',
+    }),
+    color: '#4E31AA',
+  },
+
   web3: {
     label: translate({message: 'AI Web3'}),
     description: translate({
-      message: 'crypto tools powered by ai',
+      message: 'best crypto tools powered by ai',
       id: 'item.tag.crypto.description',
     }),
     color: '#81D536',
@@ -1095,7 +1168,7 @@ export const Tags: {[type in TagType]: Tag} = {
   others: {
     label: translate({message: 'Others'}),
     description: translate({
-      message: 'other tools powered by ai',
+      message: 'best other tools powered by ai',
       id: 'item.tag.others.description',
     }),
     color: '#CDD9D4',

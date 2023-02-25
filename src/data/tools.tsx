@@ -180,7 +180,7 @@ const Tools: Tool[] = [
   {
     id: 19,
     title: "WordAi",
-    description: 'AI content writer that provides high quality rewriting that is indistinguishable from human content',
+    description: 'AI content writer that provides high-quality rewriting that is indistinguishable from human content',
     image: './images/writing/word-ai.png',
     website: 'https://wordai.com/?ref=1ddc00',
     price: 27,
@@ -216,7 +216,7 @@ const Tools: Tool[] = [
   {
     id: 23,
     title: "Munch",
-    description: 'AI tool that extracts the most engaging, trending and impactful clips from your long-form videos, using state of the art generative AI and marketing analytics',
+    description: 'AI tool that extracts the most engaging, trending and impactful clips from your long-form videos, using state-of-the-art generative AI and marketing analytics',
     image: './images/video/munch.png',
     website: 'https://www.getmunch.com/?utm_campaign=influencers&utm_medium=website&utm_source=rewardful&via=deeintech',
     price: 49,
@@ -274,7 +274,7 @@ const Tools: Tool[] = [
     image: './images/video/pictory.png',
     website: 'https://pictory.ai?ref=dmytro80',
     price: 19,
-    tags: ['video'],
+    tags: ['video', 'favorite'],
   },
   {
     id: 30,
@@ -288,7 +288,7 @@ const Tools: Tool[] = [
   {
     id: 31,
     title: "InVideo",
-    description: 'Video creation tool with 5000+ ready-made templates and AI based text-to-video editor',
+    description: 'Video creation tool with 5000+ ready-made templates and AI-based text-to-video editor',
     image: './images/video/invideo.png',
     website: 'https://invideo.sjv.io/deeintech',
     price: 15,
@@ -324,7 +324,7 @@ const Tools: Tool[] = [
   {
     id: 35,
     title: "Fliki",
-    description: 'AI video creation platform that create videos from scripts or blog posts using realistic AI voices in 2 minutes',
+    description: 'AI video creation platform that creates videos from scripts or blog posts using realistic AI voices in 2 minutes',
     image: './images/video/fliki.png',
     website: 'https://fliki.ai/?via=deeintech',
     price: 6,
@@ -418,7 +418,7 @@ const Tools: Tool[] = [
     image: './images/writing/copy-ai.png',
     website: 'https://www.copy.ai/?via=deeintech',
     price: 36,
-    tags: ['writing', 'freeplan'],
+    tags: ['writing', 'freeplan', 'favorite'],
   },
   {
     id: 46,
@@ -459,7 +459,7 @@ const Tools: Tool[] = [
   {
     id: 50,
     title: "Nova",
-    description: 'Online video editing software that helps to cut, trim, collide, traslate your clips, add subtitles, and more',
+    description: 'Online video editing software that helps to cut, trim, collide, translate your clips, add subtitles, and more',
     image: './images/video/nova.png',
     website: 'https://app.wearenova.ai/signup?ref=deeintech',
     price: 10,
@@ -513,7 +513,7 @@ const Tools: Tool[] = [
   {
     id: 55,
     title: "Aiva",
-    description: 'A neural net that generates music, including rudimentary singing, as raw audio in a variety of genres and artist styles',
+    description: 'AI tool for composing emotional soundtrack music',
     image: './images/voice/aiva.png',
     website: 'https://www.aiva.ai/',
     price: 11,
@@ -531,7 +531,7 @@ const Tools: Tool[] = [
   {
     id: 56,
     title: "Notion AI",
-    description: 'AI assitant powered by Notion for generation of any type of content faster',
+    description: 'AI assistant powered by Notion for generation of any type of content faster',
     image: './images/writing/notion-ai.png',
     website: 'https://www.notion.so/product/ai',
     price: -1,
@@ -540,7 +540,7 @@ const Tools: Tool[] = [
   {
     id: 57,
     title: "ACT-1",
-    description: 'AI assitant built by Adept that executes high-level user requests automatically',
+    description: 'AI assistant built by Adept that executes high-level user requests automatically',
     image: './images/assistant/act-1.png',
     website: 'https://www.adept.ai/act',
     price: -1,
@@ -585,7 +585,7 @@ const Tools: Tool[] = [
   {
     id: 62,
     title: "Ad Creative AI",
-    description: `AI tool to generate conversion focused ad creatives and social media post creatives in a matter of seconds`,
+    description: `AI tool to generate conversion-focused ad creatives and social media post creatives in a matter of seconds`,
     image: './images/marketing/adcreativeai.png',
     website: 'https://free-trial.adcreative.ai/63k28gi0mi4f',
     price: 29,
@@ -720,7 +720,7 @@ const Tools: Tool[] = [
   {
     id: 77,
     title: "Text Cortex",
-    description: 'AI tool to write marketing, sales and website copy written in seconds',
+    description: 'AI tool to write marketing, sales, and website copy written in seconds',
     image: './images/writing/textcortex.png',
     website: 'https://textcortex.com/?via=deeintech',
     price: 29,
@@ -801,7 +801,7 @@ const Tools: Tool[] = [
   {
     id: 86,
     title: "Bannerbear",
-    description: 'AI tool that helps you auto-generate social media visuals, ecommerce banners and more with REST API and integrations',
+    description: 'AI tool that helps you auto-generate social media visuals, e-commerce banners and more with REST API and integrations',
     image: './images/marketing/bannerbear.png',
     website: 'https://www.bannerbear.com/?via=deeintech',
     price: 49,
@@ -837,7 +837,7 @@ const Tools: Tool[] = [
   {
     id: 90,
     title: "Systeme",
-    description: `World's easiest all-in-ane marketing platform for building funnels, websites, affiliate networks, courses, emails, etc.`,
+    description: `World's easiest all-in-one marketing platform for building funnels, websites, affiliate networks, courses, emails, etc.`,
     image: './images/marketing/systeme.png',
     website: 'https://systeme.io/',
     price: 27,
@@ -945,7 +945,7 @@ const Tools: Tool[] = [
   {
     id: 102,
     title: "Dumme",
-    description: `AI tool that generates ready to upload shorts, no editing skills required`,
+    description: `AI tool that generates ready-to-upload shorts, no editing skills required`,
     image: './images/video/dumme.png',
     website: 'https://dumme.com/',
     price: -1,
@@ -1017,7 +1017,7 @@ const Tools: Tool[] = [
   {
     id: 110,
     title: "Kaiber AI",
-    description: 'AI tool that transform your ideas into the visual stories of your dreams with our state-of-the-art AI generation engine',
+    description: 'AI tool that transforms your ideas into the visual stories of your dreams with our state-of-the-art AI generation engine',
     image: './images/art/kaiber.png',
     website: 'https://www.kaiber.ai/',
     price: 15,
@@ -1080,7 +1080,7 @@ const Tools: Tool[] = [
   {
     id: 117,
     title: "Pebblely",
-    description: 'AI tool fo creating Instagram-worthy photos for any product with the click of a button',
+    description: 'AI tool for creating Instagram-worthy photos for any product with the click of a button',
     image: './images/marketing/pebblely.png',
     website: 'https://pebblely.com/',
     price: 19,
@@ -1116,7 +1116,7 @@ const Tools: Tool[] = [
   {
     id: 121,
     title: "Fini",
-    description: 'AI tool that that turns your knowledge base into AI chat',
+    description: 'AI tool that turns your knowledge base into AI chat',
     image: './images/others/fini.png',
     website: 'https://www.usefini.com/',
     price: 499,
@@ -1125,7 +1125,7 @@ const Tools: Tool[] = [
   {
     id: 122,
     title: "Needl",
-    description: 'AI tool that allows to search for anything in one unified app',
+    description: 'AI tool that allows searching for anything in one unified app',
     image: './images/others/needl.png',
     website: 'https://www.needl.tech/',
     price: 10,
